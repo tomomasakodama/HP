@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ja">
+<meta charset="UTF-8">
+<meta name ="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Cpmpatible" content="ie=edge">
+<title>PORTFOLIO</title>
+<style type="text/css">
+body{
+    background-color: #ced1d3;
+    overflow-x: hidden;
+}
+.cbox {
+    height: 50px;
+    width: 500px;
+    border: 2px solid black;
+}
+.cbox1{
+    height: 200px;
+    width: 500px;
+    border: 2px solid black;
+}
+.homeimg {
+    background-image: url(img/home.png);
+    background-repeat: no-repeat;
+    top: 20px;
+    left: 10px;
+    position: relative;
+}
+.home {
+    font-size: 30px;
+    top: -5px;
+    left: 30px;
+    position: relative;
+    cursor: pointer;
+}
+.maincontact {
+    font-size: 60px;
+    top: 50px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cbody {
+    top: 50px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.company-name {
+    top: 100px;
+    left: 700px;
+    position: relative;
+}
+.customer-name {
+    top: 110px;
+    left: 700px;
+    position: relative;
+}
+.customer-phone {
+    top: 120px;
+    left: 700px;
+    position: relative;
+}
+.contact-detail{
+    top: 130px;
+    left: 700px;
+    position: relative;
+}
+.send{
+    position: relative;
+    top: 160px;
+    left: 700px;
+    height: 50px;
+    width: 200px;
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+</style>
+<head>
+    <meta charset="UTF-8">
+    <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Cpmpatible" content="ie=edge">
+    <title>PORTFOLIO</title>
+    <style type="text/css"></style>
+</head>
+<body>
+    <div class="homeimg">
+        <div class="home"><p id="home">HOME</p></div>
+    </div>
+    <div class="maincontact">-CONTACT-</div>
+    <p class="cbody">制作の依頼・ご相談などお気軽にお問い合わせくださいませ。</p>
+    <div class="company-name">貴社名
+        <div class="cbox"></div>
+    </div>
+    <div class="customer-name">お名前
+    <div class="cbox"></div>
+    </div>
+    <div class="customer-phone">電話番号
+    <div class="cbox"></div>
+    </div>
+    <div class="contact-detail">お問い合わせ内容
+    <div class="cbox1"></div>
+    </div>
+    <div class="send">内容を送信する</div>
+
+</body>
+<script>
+    const home = document.getElementById('home');
+
+home.addEventListener('click' , () => {
+    location.href = 'homepage.html';
+});
+
+</script>
+</html>
