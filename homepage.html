@@ -6,14 +6,21 @@
         <meta http-equiv="X-UA-Cpmpatible" content="ie=edge">
         <title>PORTFOLIO</title>
         <style type="text/css">
+        
         body {
+            background-image: url(img/background.png);
+            background-repeat: no-repeat;
+            height: 100vh;
+            width: 100vw;
+            background-size: cover;
+            background-attachment: fixed;
             padding: 0;
             margin: 0;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             overflow-x: hidden;
         }
-        .header{
-            background-image: url(img/haikei.png);
+        .header {
+            background-image: url(img/haikei1.png);
             height: 600px;
             width: auto;
             position: relative;
@@ -24,6 +31,7 @@
             background-image: url(img/cloud1.jpg);
             position: relative;
             height: 500px;
+            width: auto;
             top: 200px;
             left: 800px;
             background-repeat: no-repeat;
@@ -40,7 +48,10 @@
         }
         .portfolio {
             font-size: 60px;
-            
+            left: 20px;
+            position: relative;
+            font-family: 'Corben';
+            font-weight: 1000;
         }
         .firstname {
             font-size: 30px;
@@ -53,10 +64,28 @@
             position: relative;
         }
         .topcontact {
-            left: 1300px;
+            font-size: 20px;
+            height: 10px;
+            width: auto;
+            color: white;
+            left: 1500px;
+            top: 15px;
             position: relative;
+            display: block;
+            margin: -10px ;
+            padding: 0;
             font-size: 20px;
             cursor: pointer;
+        }
+        .topcontactB-color{
+            top: -10px;
+            height: 50px;
+            width: auto;
+            background-color: #444444;
+            border-bottom: solid;
+            border-color: aqua;
+            position: relative;
+            margin: 5px 0 0 0;
         }
         .aboutme {
             font-size: 60px;
@@ -64,9 +93,12 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            font-weight: 1000;
         }
         .aboutbody {
             font-size: 20px;
+            height: auto;
+            width: auto;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -76,15 +108,23 @@
             height: 300px;
             width: auto;
             left: 300px;
-            top: 50px;
+            top: 30px;
+        }
+        .infobody{
+            font-size: 20px;
+            font-weight: 1000;
+        }
+        .infochild{
+            font-size: 20px;
+            font-weight: 500;
         }
         .undercontact{
             font-size: 20px;
-            height: 10px;
+            height: 5px;
             width: auto;
             color: white;
             left: 150px;
-            top: 15px;
+            top: 10px;
             position: relative;
             display: block;
             margin: -10px ;
@@ -94,21 +134,27 @@
         .undercontactB-color{
             height: 50px;
             width: auto;
-             top: 120px;
-            background-color: black;
+            top: 190px;
+            background-color: #444444;
+            border-top-style: solid;
+            border-color: aqua;
             position: relative;
-            display: block;
-            margin: -5;
-            padding: 0; 
-            
+            margin: 5px 0 0 0;
         }
 
         </style>
     </head>
+    <script>
+
+    </script>
     <body>
+        <div class="topcontactB-color">
+            <div class="topcontact"><p id="contact">-CONTACT-</p></div>
+        </div>
         <div class="portfolio">PORTFOLIO</div>
         <div class="firstname">BY KODAMA</div>
-        <div class="lastname">TOMOMASA<span class="topcontact"><p id="contact">-CONTACT-</p></span></div>
+        <div class="lastname">TOMOMASA</div>
+
         <div class="header">
             <div class="cloud"></div>
         </div>
@@ -118,17 +164,15 @@
             <p class="aboutbody">未経験から入りまだまだ勉強中ですが、日々頑張ってます。</p>
         <div class="faceprint">
                 <div class="info">
-                    <h3>名前：<span>児玉知優</span></h3>
-                    <p>所在地：<span>フォース株式会社</span></p>
-                    <p>お問い合わせ：<span>tomomasa.kodama@force-corp.co.jp</span></p>
+                    <p class="infobody">名前：<span class="infochild">児玉知優</span></p>
+                    <p class="infobody">所在地：<span class="infochild">フォース株式会社</span></p>
+                    <p class="infobody">お問い合わせ：<span class="infochild">tomomasa.kodama@force-corp.co.jp</span></p>
                 </div>
         </div>
         
         <div class="undercontactB-color">
             <span class="undercontact"><p id="contact1">-CONTACT-</p></span>
         </div>
-        
-        
     </body>
     <script src=js/homepage1.js></script>
 </html>
