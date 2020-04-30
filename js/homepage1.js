@@ -11,10 +11,5 @@ contact1.addEventListener('click' , () => {
     location.href = 'contact.html';
 });
 
-const home = document.getElementById('home');
-
-home.addEventListener('click' , () => {
-    location.href = 'homepage.html';
-});
 
 

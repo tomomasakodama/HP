@@ -32,7 +32,7 @@ body{
     justify-content: center;
     font-weight: 1000;
 }
-.cbody {
+.contactbody {
     top: 50px;
     position: relative;
     display: flex;
@@ -41,43 +41,54 @@ body{
 }
 .company-name {
     top: 100px;
-    left: 750px;
-    margin: 20px 0 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: relative;
 }
 .customer-name {
     top: 110px;
-    left: 750px;
-    margin: 20px 0 20px 0 ;
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .customer-tell {
     top: 120px;
-    left: 735px;
-    margin: 20px 0 20px 0;
+    left: -7px;
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
 .contact-detail {
     top: 130px;
-    left: 670px;
-    margin: 20px 0 20px 0;
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-#send {
+.send {
+    top: 200px;
     position: relative;
-    top: 120px;
-    left: 900px;
-    height: 50px;
-    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-#r1{
+.textarea {
+    top: 150px;
+    left: 20px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+#box {
   width:300px;
-}
-#r2{
-    width: 300px;
-    left: 820px;
-    top: 90px;
-    position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 </style>
 <body>
@@ -87,25 +98,27 @@ body{
         <div class="home"><p id="home">HOME</p></div>
     </div>
     <div class="contact">-CONTACT-</div>
-    <p class="cbody">制作の依頼・ご相談などお気軽にお問い合わせくださいませ。</p>
+    <p class="contactbody">制作の依頼・ご相談などお気軽にお問い合わせくださいませ。</p>
 
-    <div class="company-name"><label for="r1">貴社名：</label>   
-        <input id="r1" type="text" name="company-name">
+    <div class="company-name"><label for="box">貴社名：</label>   
+        <input id="box" type="text" name="company-name">
     </div>
 
-    <div class="customer-name"><label for="r1">お名前：</label>
-        <input id="r1" type="text" name="customer-name">
+    <div class="customer-name"><label for="rbox">お名前：</label>
+        <input id="box" type="text" name="customer-name">
     </div>
 
-    <div class="customer-tell"><labal for="r1">電話番号：</labal>
-        <input id="r1" type="number" name="customer-tell">
+    <div class="customer-tell"><labal for="box">電話番号：</labal>
+        <input id="box" type="number" name="customer-tell">
     </div>
 
-    <div class="contact-detail">
-        <label for="r1">お問い合わせ内容：</label>
+    <div class="contact-detail">お問い合わせ内容</div>
+    
+    <div class="textarea" >
+    <textarea name="textarea" rows="10" cols="60"></textarea>
     </div>
-        <textarea id="r2" name="comment"></textarea>
-    <div id="send">
+
+    <div class="send">
         <input type="submit" value="送信する">
     </div>
 </body>
